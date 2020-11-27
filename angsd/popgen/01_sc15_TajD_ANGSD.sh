@@ -1,3 +1,4 @@
+
 #! /bin/bash
 #SBATCH -A snic2020-5-36
 #SBATCH -p core -n 8 #needs full node for array 1-6
@@ -9,7 +10,7 @@
 #SBATCH -e angsd_%A_%a.err            # File to which STDERR will be written
 #SBATCH -o angsd_%A_%a.out
 module load samtools/1.10
-
+#
 ANGSD_PATH=/crex/proj/uppstore2017190/b2012111_nobackup/private/Erik/finches/tools/angsd_2Sep2020/angsd
 PCANGSD_PATH=/crex/proj/uppstore2017190/b2012111_nobackup/private/Erik/finches/tools/pcangsd
 
